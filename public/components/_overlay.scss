@@ -1,0 +1,32 @@
+.overlay {
+  @include position(absolute, $top:0, $left: 0);
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  &.ended, &.paused {
+    display: flex;
+  }
+  
+  &.paused {
+    color: $base-color-2;
+    
+    p {
+      font-size: $font-size-32;
+    }
+  }
+
+  .inner {
+    background: $base-color-2;
+    padding: $space-20 50px;
+    color: $base-color-3;
+    border: $border-2;
+    border-radius: 5px;
+    box-shadow: $shadow-2;
+    font-size: $font-size-32;
+    display: inline-block;
+  }
+}

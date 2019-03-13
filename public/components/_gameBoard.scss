@@ -1,0 +1,12 @@
+#game-container {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}

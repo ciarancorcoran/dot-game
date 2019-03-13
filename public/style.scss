@@ -1,0 +1,28 @@
+/* UTILS */
+@import 'utils/colors';
+@import 'utils/spacing';
+@import 'utils/fontSizes';
+@import 'utils/shadowsAndBorders';
+@import 'utils/mixins';
+@import 'utils/helpers';
+@import 'utils/mediaQueries';
+
+/* ELEMENTS */
+@import 'elements/buttons';
+@import 'elements/rangeSlider';
+
+/* COMPONENTS */
+@import 'components/header';
+@import 'components/overlay';
+@import 'components/gameBoard';
+
+body {
+	background: $base-color-2;
+	margin: 0;
+	font-family:'helvetica', sans-serif;
+	position: relative;
+  
+  h1 {
+    font-size: $font-size-24;
+  }
+}

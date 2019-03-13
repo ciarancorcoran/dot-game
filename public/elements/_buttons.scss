@@ -1,0 +1,48 @@
+.btn {
+  min-width: 120px;
+  color: $base-color-2;
+  box-shadow: $shadow-1;
+  padding: $space-10;
+  font-size: $font-size-16;
+  border-radius: 5px;
+  cursor: pointer;
+	text-shadow: $shadow-1;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.btn-start:hover,
+  &.btn-pause:hover,
+  &.btn-end:hover {
+    transition: background-color 0.2s;
+  }
+
+  &.btn-start {
+    background: $base-color-4;
+
+    &:hover {
+      background: $base-color-5;
+    }
+  }
+
+  &.btn-pause {
+    background: $base-color-8;
+
+    &:hover {
+      background: $base-color-9;
+    }
+  }
+
+  &.btn-end {
+    background: $base-color-11;
+
+    &:hover {
+      background: $base-color-12;
+    }
+  }
+
+  &.btn-change-direction {
+    background: $base-color-10;
+  }
+}

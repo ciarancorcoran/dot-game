@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dot Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<body>
+  
+  <header id="header">
+    <div class="header-column">
+      <h1 class="margin-10-bottom">Dot Game</h1>
+      <button id="btn-start-pause" class="btn btn-start margin-10-right margin-10-bottom">Start</button>
+      <div class="slider-container margin-10-top">
+        <input type="range" min="10" max="100" value="50" class="range-slider" id="range-slider">
+        <p>Speed: <span id="speed-span">50</span></p>
+      </div>
+    </div>
+    <div class="header-column text-right">
+      <h2 class="margin-10-bottom">Score: <span id="points">0</span></h2>
+      <button id="btn-change-direction" class="btn btn-change-direction margin-10-bottom">Direction</button>
+      <button id="btn-end" class="btn btn-end margin-10-left">End Game</button>
+    </div>
+  </header>
+
+  <div id="game-container">
+    <div id="game-paused" class="overlay">
+      <p>PAUSED</p>
+    </div>
+  </div>
+  
+  <div id="result-container" class="overlay">
+    <div class="inner text-center">
+      <p>Final score: <span id="final-score"></span></p>
+      <button id="btn-new-game" class="btn btn-start">New game</button>
+      <button id="btn-cancel" class="btn btn-end">Cancel</button>
+    </div>
+  </div>
+  
+  <script src="gameBoard.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

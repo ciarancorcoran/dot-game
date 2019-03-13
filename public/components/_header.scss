@@ -1,0 +1,16 @@
+header {
+  padding: $space-10 $space-20;
+  background: $base-color-2;
+  color: $base-color-3;
+  border-bottom: $border-2;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  
+  .header-column {
+    padding: $space-5 0;
+    
+    h1, h2 {
+      margin-top: 0;
+    }
+  }
+}
